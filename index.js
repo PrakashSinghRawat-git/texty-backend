@@ -12,6 +12,9 @@ connectTOMongo();
 
 app.use(cors())
 app.use(express.json())
+app.get('/', (req, res)=>{
+    res.status(200).send('welcome to texty backend')
+})
 app.use('/api/auth', require('./routes/auth'))
 
 app.listen(port, ()=>{

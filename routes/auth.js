@@ -9,7 +9,9 @@ const fetchuser = require("../middleware/fetchuser");
 const saltRounds = 10;
 const JWT_SECRET = process.env.JWT_SECRET || "secret";
 
+
 // ROUTE 1: Create a User using: POST "/api/auth/createuser". No login required
+
 
 router.post(
     "/createuser",
